@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+section[role=sidebar] {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  height: calc(100vh - 150px);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+div.right-bar {
+  background-color: rgb(20, 20, 30);
+  height: 150px;
+
+}
+
+main {
+  height: calc(100vh - 150px);
+  background-color: rgb(40, 40, 50);
+  overflow-y: auto;
+
+}
+
+
+div.music {
+  width: 90%;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.music-card {
+  overflow: hidden;
+  height: 350px;
+  width: 200px;
+  margin: 10px;
+
+
+}
+
+div.music-card img {
+  max-width: 100%;
+
+}
+
+div.player {
+  height: 150px;
+  background-color: rgb(60, 60, 60);
+}
