@@ -2,58 +2,247 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-
-
-
-section[role=sidebar] {
-  background-color: #000;
-  display: flex;
-  flex-direction: column;
-  width: 10%;
-  height: calc(100vh - 150px);
+/* LAYOUT */
+header {
+  background-color: rgba(20, 20, 25, 0.6);
+  height: 100px;
+  width: calc(100vw - 200px);
   position: fixed;
   top: 0;
-  left: 0;
-}
-
-div.right-bar {
-  background-color: rgb(20, 20, 30);
-  height: 150px;
-
+  right: 0;
+  z-index: 100;
 }
 
 main {
-  height: calc(100vh - 150px);
   background-color: rgb(40, 40, 50);
-  overflow-y: auto;
+  height: calc(100vh - 100px);
+  display: flex;
 
 }
 
-
-div.music {
-  width: 90%;
-  margin-left: 10%;
+aside {
+  background-color: #000;
+  width: 200px;
+  height: 100%;
+  padding-left: 20px;
   display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: rgb(40, 40, 40);
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+}
+/* LAYOUT */
+
+/* HEADER */
+
+div.button-container {
+  float: right;
+  padding: calc((100px - 37px) / 2);
+  padding-right: 20px;
+}
+
+div.button-container button {
+  padding: 10px 40px;
+  text-transform: uppercase;
+  border: 1px solid #FFF;
+  border-radius: 20px;
+  color: #FFF;
+  background-color: rgba(20, 20, 25, 0.6);
+}
+
+/* HEADER */
+
+/* MAIN */
+
+/* ASIDE */
+
+div.logo {
+  padding-top: 20px;
+}
+
+
+div i.fa-spotify {
+  font-size: 40px;
+
+  vertical-align: middle;
+
+}
+
+aside h1 {
+  color: #FFF;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+div.icons ul {
+  padding-top: 20px;
+}
+
+div.icons ul li {
+  padding: 5px 0;
+  list-style: none;
+}
+
+div.icons ul li a {
+  text-decoration: none;
+
+}
+
+div.icons ul li a svg {
+  vertical-align: middle;
+
+}
+
+div.playlist {
+  overflow-y: auto;
+  min-height: 40vh;
+}
+
+div.playlist h5 {
+  padding-top: 15px;
+}
+
+div.plus-container {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #b3b3b3;
+  position: relative;
+}
+
+div.plus-container i {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+}
+
+div.playlist ul {
+  padding-top: 15px;
+}
+
+div.playlist ul li {
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+div.profile {
+  margin-top: auto;
+}
+
+div.profile i.fa-arrow-circle-down {
+  background-color: #b3b3b3;
+  color: #000;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+div.profile div.install {
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #b3b3b3;
+  width: 90%;
+}
+
+
+div.profile div.install span {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+div.profile div.name {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+div.profile div.name i.fa-user-circle {
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+div.profile div.name span {
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ASIDE */
+
+/* MAIN */
+
+div.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
+div.nav div.nav-item {
+  padding: 20px 10px;
+  font-weight: 500;
+}
+
+div.music {
+  height: 100%;
+  width: calc(100vw - 200px);
+  overflow-y: auto;
+  padding-top: 100px;
+}
+
+div.music-card-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
 div.music-card {
-  overflow: hidden;
-  height: 350px;
-  width: 200px;
-  margin: 10px;
-
-
+  height: 200px;
+  width: calc(100% / 6 - 20px);
+  background-color: #FFF;
+  margin: 10px 10px;
 }
 
-div.music-card img {
-  max-width: 100%;
+/* MAIN */
 
+/* UTILITY */
+
+.text-white {
+  color: #FFF;
 }
 
-div.player {
-  height: 150px;
-  background-color: rgb(60, 60, 60);
+.text-center {
+  text-align: center;
 }
+
+.text-grey {
+  color: #b3b3b3;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* UTILITY */
