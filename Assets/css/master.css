@@ -262,6 +262,54 @@ div.music h3 + p {
 
 /* MAIN */
 
+/* FOOTER */
+
+div.player {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+div.left {
+  width: calc(100% / 3);
+  display: flex;
+  align-items: center;
+}
+
+
+div.album-img img {
+  width: 60px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+div.song {
+  padding-left: 10px;
+}
+
+div.song h6 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+div.song p {
+  font-size: 10px;
+}
+
+div.like {
+  padding-left: 40px;
+}
+
+div.like i {
+  padding-right: 8px;
+}
+
+
+
+
+/* FOOTER */
+
+
 /* UTILITY */
 
 .text-white {
