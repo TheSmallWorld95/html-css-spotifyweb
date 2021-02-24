@@ -46,8 +46,13 @@ footer {
 /* HEADER */
 
 div.button-container {
-  float: right;
+  /* float: right;
   padding: calc((100px - 37px) / 2);
+  padding-right: 20px; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
   padding-right: 20px;
 }
 
@@ -274,6 +279,7 @@ div.left {
   width: calc(100% / 3);
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 div.center {
@@ -287,6 +293,9 @@ div.right {
   width: calc(100% / 3);
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  height: 100%;
 }
 
 div.album-img img {
@@ -360,6 +369,14 @@ div.song-bar input {
   width: 80%;
 }
 
+div.right i {
+  font-size: 12px;
+  padding-right: 15px;
+}
+
+div.right div.volume input {
+  vertical-align: middle;
+}
 
 
 
@@ -392,3 +409,17 @@ div.song-bar input {
 }
 
 /* UTILITY */
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 878px) {
+  div.music-card {
+    width: calc(100% / 4 - 20px);
+  }
+
+  div.album-container {
+    height: 600px;
+  }
+}
+
+/* MEDIA QUERIES */
