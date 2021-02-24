@@ -7,7 +7,7 @@
 
 /* LAYOUT */
 header {
-  background-color: rgba(20, 20, 25, 0.6);
+  background-color: rgba(20, 20, 25, 1);
   height: 100px;
   width: calc(100vw - 200px);
   position: fixed;
@@ -27,9 +27,9 @@ aside {
   background-color: #000;
   width: 200px;
   height: 100%;
-  padding-left: 20px;
   display: flex;
   flex-direction: column;
+  font-size: 14px;
 }
 
 footer {
@@ -54,7 +54,15 @@ div.button-container {
   align-items: center;
   height: 100px;
   padding-right: 20px;
+
 }
+
+div.button-container button:hover {
+  height: 50px;
+  width: 250px;
+  cursor: pointer;
+}
+
 
 div.button-container button {
   padding: 10px 40px;
@@ -95,9 +103,18 @@ div.icons ul {
 }
 
 div.icons ul li {
-  padding: 5px 0;
+  padding-bottom: 5px;
   list-style: none;
 }
+
+div.icons ul li.border-green {
+  border-left: 2px solid #08cb0e;
+}
+
+div.icons ul li a.active {
+  color: #FFF;
+}
+
 
 div.icons ul li a {
   text-decoration: none;
@@ -106,8 +123,13 @@ div.icons ul li a {
 
 div.icons ul li a svg {
   vertical-align: middle;
-
 }
+
+div.icons ul li a:hover {
+  color: #FFF;
+}
+
+
 
 div.playlist {
   overflow-y: auto;
@@ -127,6 +149,9 @@ div.plus-container {
   position: relative;
 }
 
+
+
+
 div.plus-container i {
   font-size: 20px;
   position: absolute;
@@ -144,6 +169,32 @@ div.playlist ul li {
   padding-bottom: 20px;
   list-style: none;
 }
+
+div.playlist ul li a {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+div.playlist ul li:hover div.plus-container {
+  background-color: #FFF;
+}
+
+div.playlist ul li:hover span {
+  color: #FFF;
+}
+
+div.playlist ul li:hover {
+  cursor: pointer;
+}
+
+
+
+
+div.playlist ul li a:hover {
+  color: #FFF;
+}
+
+
 
 div.profile {
   margin-top: auto;
@@ -168,9 +219,15 @@ div.profile div.install span {
   padding-left: 10px;
 }
 
+div.profile div.install span:hover {
+  color: #FFF;
+  cursor: pointer;
+}
+
+
 div.profile div.name {
-  padding-top: 15px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 div.profile div.name i.fa-user-circle {
@@ -183,17 +240,6 @@ div.profile div.name span {
   font-size: 14px;
   font-weight: 700;
 }
-
-
-
-
-
-
-
-
-
-
-
 /* ASIDE */
 
 /* MAIN */
@@ -208,7 +254,31 @@ div.nav {
 div.nav div.nav-item {
   padding: 20px 10px;
   font-weight: 500;
+  font-size: 14px;
+  position: relative;
 }
+
+div.nav div.nav-item a {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+div.nav div.nav-item a:hover {
+  color: #FFF;
+}
+
+div.nav div.nav-item a.b-green:after {
+  content: "";
+  border-bottom: 2px solid #08cb0e;
+  display: inline-block;
+  width: 35%;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
 
 div.music {
   width: calc(100vw - 200px);
@@ -226,19 +296,52 @@ div.music h3 {
 div.album-container {
   display: flex;
   flex-wrap: wrap;
-  height: 300px;
   padding-top: 20px;
 }
 
+
 div.music-card {
-  height: 200px;
   width: calc(100% / 6 - 20px);
   margin: 10px 10px;
 }
 
+div.layover {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 175px;
+}
+
+div.layover img:hover {
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+
+
+
+div.layover a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  font-size: 50px;
+  display: none;
+}
+
+div.layover:hover a {
+  display: block;
+
+}
+
+
+
 div.music-card img {
   width: 100%;
-  height: 100%;
+  height: 175px;
+  margin: 0 auto;
 }
 
 div.music-card h4 {
@@ -317,6 +420,13 @@ div.song p {
   font-size: 10px;
 }
 
+div.song p:hover {
+  color: #FFF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
 div.like {
   padding-left: 40px;
 }
@@ -325,14 +435,20 @@ div.like i {
   padding-right: 8px;
 }
 
+div.like a i:hover {
+  color: #FFF;
+}
+
+
 div.player-icon {
   display: flex;
   justify-content: center;
+  height: 55px;
 }
 
 div.player-icon ul {
   padding-top: 15px;
-
+  padding-bottom: 15px;
 }
 
 
@@ -354,10 +470,15 @@ div.player-icon ul li a i.fa-play-circle {
   font-size: 25px;
 }
 
+div.player-icon ul li a i.fa-play-circle:hover {
+  font-size: 30px;
+}
+
+
 div.song-bar {
   display: flex;
   justify-content: space-between;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 
 div.song-bar span {
@@ -408,18 +529,111 @@ div.right div.volume input {
   border-radius: 50%;
 }
 
+.pl-1 {
+  padding-left: 20px;
+}
+
 /* UTILITY */
 
 /* MEDIA QUERIES */
 
-@media all and (max-width: 878px) {
+@media all and (max-width: 1100px) {
   div.music-card {
     width: calc(100% / 4 - 20px);
   }
 
-  div.album-container {
-    height: 600px;
-  }
+
 }
+
+@media all and (max-width: 750px) {
+  div.music-card {
+    width: calc(100% / 2 - 20px);
+  }
+
+  div.nav div.nav-item {
+    font-size: 10px;
+  }
+
+  div.left {
+    width: 200px;
+  }
+
+  div.center {
+    width: 400px;
+  }
+
+  div.right {
+    width: 200px;
+  }
+
+  div.right div.controls {
+    display: flex;
+  }
+
+
+  div.like {
+    padding-left: 20px;
+  }
+
+  div.right div.volume input {
+    width: 70%;
+  }
+
+  div.right i {
+    padding-right: 10px;
+  }
+
+  div.song-bar {
+    width: 100%;
+  }
+
+  div.song-bar span {
+    padding: 0 10px;
+  }
+
+
+}
+
+@media all and (max-width: 600px) {
+  header {
+    width: calc(100vw - 50px);
+  }
+
+  aside {
+    width: 50px;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  aside h1, aside span, div.playlist {
+    display: none
+  }
+
+  div.profile div.install {
+    border: 0;
+  }
+
+  div.profile div.install {
+    text-align: center;
+  }
+
+  div.music {
+    width: calc(100vw - 50px);
+  }
+
+
+  div.right {
+    justify-content: center;
+  }
+
+  div.right div.volume {
+    display: none;
+  }
+
+
+
+}
+
+
 
 /* MEDIA QUERIES */
