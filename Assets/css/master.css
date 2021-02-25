@@ -20,7 +20,6 @@ main {
   background-color: rgb(40, 40, 50);
   height: calc(100vh - 100px);
   display: flex;
-
 }
 
 aside {
@@ -39,7 +38,6 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-
 }
 /* LAYOUT */
 
@@ -54,7 +52,6 @@ div.button-container {
   align-items: center;
   height: 100px;
   padding-right: 20px;
-
 }
 
 div.button-container button:hover {
@@ -62,7 +59,6 @@ div.button-container button:hover {
   width: 250px;
   cursor: pointer;
 }
-
 
 div.button-container button {
   padding: 10px 40px;
@@ -83,19 +79,16 @@ div.logo {
   padding-top: 20px;
 }
 
-
 div i.fa-spotify {
   font-size: 40px;
 
   vertical-align: middle;
-
 }
 
 aside h1 {
   color: #FFF;
   display: inline-block;
   vertical-align: middle;
-
 }
 
 div.icons ul {
@@ -108,7 +101,7 @@ div.icons ul li {
 }
 
 div.icons ul li.border-green {
-  border-left: 2px solid #08cb0e;
+  border-left: 2px solid #A7F62D;
 }
 
 div.icons ul li a.active {
@@ -118,7 +111,6 @@ div.icons ul li a.active {
 
 div.icons ul li a {
   text-decoration: none;
-
 }
 
 div.icons ul li a svg {
@@ -128,8 +120,6 @@ div.icons ul li a svg {
 div.icons ul li a:hover {
   color: #FFF;
 }
-
-
 
 div.playlist {
   overflow-y: auto;
@@ -148,9 +138,6 @@ div.plus-container {
   background-color: #b3b3b3;
   position: relative;
 }
-
-
-
 
 div.plus-container i {
   font-size: 20px;
@@ -187,14 +174,9 @@ div.playlist ul li:hover {
   cursor: pointer;
 }
 
-
-
-
 div.playlist ul li a:hover {
   color: #FFF;
 }
-
-
 
 div.profile {
   margin-top: auto;
@@ -213,7 +195,6 @@ div.profile div.install {
   width: 90%;
 }
 
-
 div.profile div.install span {
   font-size: 14px;
   padding-left: 10px;
@@ -223,7 +204,6 @@ div.profile div.install span:hover {
   color: #FFF;
   cursor: pointer;
 }
-
 
 div.profile div.name {
   padding-top: 10px;
@@ -269,7 +249,7 @@ div.nav div.nav-item a:hover {
 
 div.nav div.nav-item a.b-green:after {
   content: "";
-  border-bottom: 2px solid #08cb0e;
+  border-bottom: 2px solid #A7F62D;
   display: inline-block;
   width: 35%;
   position: absolute;
@@ -277,8 +257,6 @@ div.nav div.nav-item a.b-green:after {
   left: 50%;
   transform: translate(-50%);
 }
-
-
 
 div.music {
   width: calc(100vw - 200px);
@@ -292,13 +270,11 @@ div.music h3 {
   font-weight: 700;
 }
 
-
 div.album-container {
   display: flex;
   flex-wrap: wrap;
   padding-top: 20px;
 }
-
 
 div.music-card {
   width: calc(100% / 6 - 20px);
@@ -318,9 +294,6 @@ div.layover img:hover {
   cursor: pointer;
 }
 
-
-
-
 div.layover a {
   position: absolute;
   top: 50%;
@@ -335,8 +308,6 @@ div.layover:hover a {
   display: block;
 
 }
-
-
 
 div.music-card img {
   width: 100%;
@@ -356,7 +327,6 @@ div.music-card p {
   font-size: 12px;
   padding-top: 8px;
   text-align: center;
-
 }
 
 div.music h3 + p {
@@ -365,8 +335,6 @@ div.music h3 + p {
   font-size: 14px;
   padding-top: 5px;
 }
-
-
 
 /* MAIN */
 
@@ -426,7 +394,6 @@ div.song p:hover {
   cursor: pointer;
 }
 
-
 div.like {
   padding-left: 40px;
 }
@@ -439,7 +406,6 @@ div.like a i:hover {
   color: #FFF;
 }
 
-
 div.player-icon {
   display: flex;
   justify-content: center;
@@ -451,19 +417,16 @@ div.player-icon ul {
   padding-bottom: 15px;
 }
 
-
 div.player-icon ul li {
   list-style: none;
   display: inline-block;
   padding-right: 15px;
-
 }
 
 div.player-icon ul li a i {
   color: #FFF;
   font-size: 16px;
   vertical-align: middle;
-
 }
 
 div.player-icon ul li a i.fa-play-circle {
@@ -473,7 +436,6 @@ div.player-icon ul li a i.fa-play-circle {
 div.player-icon ul li a i.fa-play-circle:hover {
   font-size: 30px;
 }
-
 
 div.song-bar {
   display: flex;
@@ -498,12 +460,6 @@ div.right i {
 div.right div.volume input {
   vertical-align: middle;
 }
-
-
-
-
-
-
 /* FOOTER */
 
 
@@ -541,8 +497,6 @@ div.right div.volume input {
   div.music-card {
     width: calc(100% / 4 - 20px);
   }
-
-
 }
 
 @media all and (max-width: 750px) {
@@ -570,7 +524,6 @@ div.right div.volume input {
     display: flex;
   }
 
-
   div.like {
     padding-left: 20px;
   }
@@ -578,6 +531,7 @@ div.right div.volume input {
   div.right div.volume input {
     width: 70%;
   }
+
 
   div.right i {
     padding-right: 10px;
@@ -590,18 +544,16 @@ div.right div.volume input {
   div.song-bar span {
     padding: 0 10px;
   }
-
-
 }
 
 @media all and (max-width: 600px) {
   header {
-    width: calc(100vw - 50px);
+    width: calc(100vw - 80px);
   }
 
   aside {
-    width: 50px;
-    align-items: center;
+    width: 80px;
+
     padding-left: 0;
   }
 
@@ -614,11 +566,11 @@ div.right div.volume input {
   }
 
   div.profile div.install {
-    text-align: center;
+    padding-left: 5px;
   }
 
   div.music {
-    width: calc(100vw - 50px);
+    width: calc(100vw - 80px);
   }
 
 
@@ -631,9 +583,42 @@ div.right div.volume input {
   }
 
 
-
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input[type='range'] {
+    width: 80px;
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: #a2a2a2;
+    border-radius: 5px;
+    height: 5px;
+    outline: none;
+  }
+  input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: white;
+      margin-top: -1px;
+      background-color: #a2a2a2;
+  }
+  input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: #a2a2a2;
+      box-shadow: -100vw 0 0 100vw #FFF;
+      -webkit-appearance: none;
+  }
+
+  input[type='range']:hover::-webkit-slider-thumb {
+      box-shadow: -100vw 0 0 100vw #A7F62D;
+      background: #FFF;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+}
 
 
 /* MEDIA QUERIES */
